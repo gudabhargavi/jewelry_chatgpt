@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Elegance Jewelry Boutique</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f4f4f4, #e0e0e0); /* Gradient background */
+        }
+
+        header {
+            background: linear-gradient(to bottom, #ffd700, #e6b800); /* Gradient header */
+            color: #333;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+            transition: all 0.3s ease; /* Add transition */
+        }
+
+        nav ul li:hover {
+            transform: translateY(-3px); /* Add hover effect */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .category {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+
+        .category h2 {
+            color: #ffd700; /* Gold text */
+        }
+
+        footer {
+            background-color: #333; /* Dark grey footer */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Golden Elegance Jewelry Boutique</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#rings">Rings</a></li>
+                    <li><a href="#earrings">Earrings</a></li>
+                    <li><a href="#chains">Chains</a></li>
+                    <li><a href="#bracelets">Bracelets</a></li>
+                    <li><a href="#watches">Watches</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div id="home" class="container">
+        <h2>Welcome to Golden Elegance Jewelry Boutique</h2>
+        <p>Discover the finest selection of luxurious gold jewelry.</p>
+        <p>Explore our exquisite collection of rings, earrings, chains, bracelets, and watches.</p>
+    </div>
+
+    <div id="rings" class="container category">
+        <h2>Rings</h2>
+        <p>Discover our stunning collection of gold rings.</p>
+        <!-- Add images and more detailed descriptions if desired -->
+    </div>
+
+    <div id="earrings" class="container category">
+        <h2>Earrings</h2>
+        <p>Explore our elegant collection of gold earrings.</p>
+        <!-- Add images and more detailed descriptions if desired -->
+    </div>
+
+    <div id="chains" class="container category">
+        <h2>Chains</h2>
+        <p>Find the perfect gold chain to complement your style.</p>
+        <!-- Add images and more detailed descriptions if desired -->
+    </div>
+
+    <div id="bracelets" class="container category">
+        <h2>Bracelets</h2>
+        <p>Enhance your look with our stylish gold bracelets.</p>
+        <!-- Add images and more detailed descriptions if desired -->
+    </div>
+
+    <div id="watches" class="container category">
+        <h2>Watches</h2>
+        <p>Stay punctual and fashionable with our collection of gold watches.</p>
+        <!-- Add images and more detailed descriptions if desired -->
+    </div>
+
+    <div id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message"></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <div class="container">
+            &copy; 2024 Golden Elegance Jewelry Boutique. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript Code
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            if (name.trim() == "") {
+                alert("Please enter your name.");
+                return false;
+            }
+
+            if (email.trim() == "") {
+                alert("Please enter your email.");
+                return false;
+            }
+
+            if (message.trim() == "") {
+                alert("Please enter your message.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>
